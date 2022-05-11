@@ -47,7 +47,7 @@ from search import bo_policies
 # import bo_policies
 
 MODEL_NAME = 'wrn'
-CHECKPOINT_DIR = '/data/zhangchx/APIN/all/tmp/20220423/training_'
+CHECKPOINT_DIR = ' '
 
 arg_scope = tf.contrib.framework.arg_scope
 
