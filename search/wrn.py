@@ -24,12 +24,6 @@ import numpy as np
 import tensorflow as tf
 
 
-# import custom_ops as ops
-# import numpy as np
-# import tensorflow as tf
-
-
-
 def residual_block(
     x, in_filter, out_filter, stride, activate_before_residual=False):
   """Adds residual connection to `x` in addition to applying BN->ReLU->3x3 Conv.
