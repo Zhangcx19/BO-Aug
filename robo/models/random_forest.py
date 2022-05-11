@@ -2,7 +2,7 @@
 import numpy as np
 
 
-from robo1.models.base_model import BaseModel
+from robo.models.base_model import BaseModel
 
 try:
     import pyrfr.regression as reg
