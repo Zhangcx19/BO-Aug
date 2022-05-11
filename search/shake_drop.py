@@ -24,11 +24,6 @@ import search.custom_ops as ops
 import tensorflow as tf
 
 
-# import math
-# import custom_ops as ops
-# import tensorflow as tf
-
-
 def round_int(x):
   """Rounds `x` and then converts to an int."""
   return int(math.floor(x + 0.5))
