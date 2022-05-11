@@ -3,20 +3,20 @@ from logging import handlers
 import george
 import numpy as np
 
-from robo1.priors.default_priors import DefaultPrior
-from robo1.models.gaussian_process import GaussianProcess
-from robo1.models.gaussian_process_mcmc import GaussianProcessMCMC
-from robo1.models.random_forest import RandomForest
-from robo1.maximizers.direct import Direct
-from robo1.maximizers.cmaes import CMAES
-from robo1.maximizers.scipy_optimizer import SciPyOptimizer
-from robo1.maximizers.random_sampling import RandomSampling
-from robo1.solver.bayesian_optimization import BayesianOptimization
-from robo1.acquisition_functions.ei import EI
-from robo1.acquisition_functions.pi import PI
-from robo1.acquisition_functions.log_ei import LogEI
-from robo1.acquisition_functions.lcb import LCB
-from robo1.acquisition_functions.marginalization import MarginalizationGPMCMC
+from robo.priors.default_priors import DefaultPrior
+from robo.models.gaussian_process import GaussianProcess
+from robo.models.gaussian_process_mcmc import GaussianProcessMCMC
+from robo.models.random_forest import RandomForest
+from robo.maximizers.direct import Direct
+from robo.maximizers.cmaes import CMAES
+from robo.maximizers.scipy_optimizer import SciPyOptimizer
+from robo.maximizers.random_sampling import RandomSampling
+from robo.solver.bayesian_optimization import BayesianOptimization
+from robo.acquisition_functions.ei import EI
+from robo.acquisition_functions.pi import PI
+from robo.acquisition_functions.log_ei import LogEI
+from robo.acquisition_functions.lcb import LCB
+from robo.acquisition_functions.marginalization import MarginalizationGPMCMC
 
 
 def bayesian_optimization(objective_function, lower, upper, num_iterations=100, i=0,
