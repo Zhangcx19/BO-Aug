@@ -1,7 +1,7 @@
 import logging
 import numpy as np
 
-from robo1.acquisition_functions.base_acquisition import BaseAcquisitionFunction
+from robo.acquisition_functions.base_acquisition import BaseAcquisitionFunction
 
 
 logger = logging.getLogger(__name__)
