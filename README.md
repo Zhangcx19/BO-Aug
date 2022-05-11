@@ -1,6 +1,6 @@
 # BO-Aug
 
-Code of searching policies on the TinyImagenet dataset.
+Code of searching policies and evaluating performance on the TinyImagenet dataset.
 
 
 --Key package version: 
