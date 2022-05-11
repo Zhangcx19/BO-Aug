@@ -1,7 +1,7 @@
 import emcee
 import numpy as np
 
-from robo1.acquisition_functions.information_gain import InformationGain
+from robo.acquisition_functions.information_gain import InformationGain
 
 
 class InformationGainPerUnitCost(InformationGain):
