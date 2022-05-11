@@ -36,15 +36,15 @@ import tensorflow as tf
 from wrn import build_wrn_model
 import bo_policies as bo_policies
 
-file_path = "/mnt/home/zhaoxi35/zhangzijian/xz-net/Aug/train_tiny_aug/log/"
-logging.basicConfig(level=logging.DEBUG, filename=file_path+"wrn-28-2-aug.txt",
+file_path = "./train/log/"
+logging.basicConfig(level=logging.DEBUG, filename=file_path+"wrn-28-2.txt",
                     format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')
 
 tf.flags.DEFINE_string('model_name', 'wrn',
                        'wrn, shake_shake_32, shake_shake_96, shake_shake_112, '
                        'pyramid_net')
-tf.flags.DEFINE_string('checkpoint_dir', '/mnt/home/zhaoxi35/zhangzijian/xz-net/Aug/train_tiny_aug/tmp/20220425', 'Training Directory.')
-tf.flags.DEFINE_string('data_path', '/mnt/home/zhaoxi35/zhangzijian/xz-net/Aug/train_tiny/tmp/',
+tf.flags.DEFINE_string('checkpoint_dir', './train/tmp/', 'Training Directory.')
+tf.flags.DEFINE_string('data_path', './train/tmp/',
                        'Directory where dataset is located.')
 tf.flags.DEFINE_string('dataset', 'tiny',
                        'Dataset to train with. Either cifar10 or cifar100')
