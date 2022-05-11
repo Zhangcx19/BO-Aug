@@ -140,7 +140,7 @@ class DataSet(object):
 
     self.good_policies = found_policies.good_policies()
 
-    root = '/mnt/home/zhaoxi35/zhangzijian/xz-net/Aug/train_tiny/tmp/'
+    root = './train/tmp/'
     trainset = TinyIN(root=root, train=True)
     testset = TinyIN(root=root, train=False)
     all_data = trainset.train_data
