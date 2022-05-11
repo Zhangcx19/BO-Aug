@@ -1,6 +1,6 @@
 import numpy as np
 
-from robo1.maximizers.base_maximizer import BaseMaximizer
+from robo.maximizers.base_maximizer import BaseMaximizer
 
 
 class GridSearch(BaseMaximizer):
