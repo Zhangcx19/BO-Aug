@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Data utils for CIFAR-10 and CIFAR-100."""
+"""Data utils for TinyImagenet."""
 
 from __future__ import absolute_import
 from __future__ import division
@@ -28,17 +28,6 @@ from search import augmentation_transforms
 import numpy as np
 import search.bo_policies as found_policies
 import tensorflow as tf
-
-# from PIL import Image
-# import copy
-# import pickle
-# import os
-# import os.path
-# import pandas as pd
-# import augmentation_transforms
-# import numpy as np
-# import bo_policies as found_policies
-# import tensorflow as tf
 
 
 # pylint:disable=logging-format-interpolation
@@ -145,7 +134,7 @@ class DataSet(object):
 
     self.good_policies = found_policies.good_policies()
 
-    root = '/data/zhangchx/APIN/search/tmp/'
+    root = './search/tmp/'
     trainset = TinyIN(root=root, train=True)
     testset = TinyIN(root=root, train=False)
     all_data = trainset.train_data
