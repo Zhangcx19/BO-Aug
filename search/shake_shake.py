@@ -23,10 +23,6 @@ import search.custom_ops as ops
 import tensorflow as tf
 
 
-# import custom_ops as ops
-# import tensorflow as tf
-
-
 def _shake_shake_skip_connection(x, output_filters, stride):
   """Adds a residual connection to the filter x for the shake-shake model."""
   curr_filters = int(x.shape[3])
