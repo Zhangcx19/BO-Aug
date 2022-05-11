@@ -6,9 +6,9 @@ import numpy as np
 
 from copy import deepcopy
 
-from robo1.models.base_model import BaseModel
-from robo1.models.gaussian_process import GaussianProcess
-from robo1.util import normalization
+from robo.models.base_model import BaseModel
+from robo.models.gaussian_process import GaussianProcess
+from robo.util import normalization
 
 logger = logging.getLogger(__name__)
 
