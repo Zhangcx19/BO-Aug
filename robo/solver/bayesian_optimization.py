@@ -8,13 +8,13 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from logging import handlers
 
-from robo1.initial_design.init_random_uniform import init_random_uniform
-from robo1.initial_design.init_random_normal import init_random_normal
-from robo1.initial_design.init_grid import init_grid
-from robo1.initial_design.init_latin_hypercube_sampling import init_latin_hypercube_sampling
-from robo1.solver.base_solver import BaseSolver
+from robo.initial_design.init_random_uniform import init_random_uniform
+from robo.initial_design.init_random_normal import init_random_normal
+from robo.initial_design.init_grid import init_grid
+from robo.initial_design.init_latin_hypercube_sampling import init_latin_hypercube_sampling
+from robo.solver.base_solver import BaseSolver
 
-file_path = "/data/zhangchx/APIN/search/tmp/20220420/"
+file_path = " "
 logger = logging.getLogger(__name__)#'bayesian_optimization'
 th = handlers.TimedRotatingFileHandler(filename=file_path+"log_bo.txt", encoding='utf-8')
 th.setFormatter(logging.Formatter( '%(asctime)s - %(message)s'))
@@ -286,10 +286,3 @@ class BayesianOptimization(BaseSolver):
         #plt.plot(T, y_real)
         plt.plot(T, y)
         plt.savefig(file_path+"%s.png" %p)
-        
-    def write_to_file(self, l):
-        
-        f = open('/home/zcx/Exp/results/30;40/ei/result10.txt','a')
-        f.write("\r\n" + str(l))
-        f.close()
-
