@@ -1,7 +1,7 @@
 
 import numpy as np
 
-from robo1.priors.base_prior import BasePrior, TophatPrior, \
+from robo.priors.base_prior import BasePrior, TophatPrior, \
     LognormalPrior, HorseshoePrior
 
 
