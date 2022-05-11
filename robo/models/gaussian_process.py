@@ -5,8 +5,8 @@ import numpy as np
 
 from scipy import optimize
 
-from robo1.util import normalization
-from robo1.models.base_model import BaseModel
+from robo.util import normalization
+from robo.models.base_model import BaseModel
 
 logger = logging.getLogger(__name__)
 
