@@ -36,15 +36,6 @@ import tensorflow as tf
 from search.wrn import build_wrn_model
 from search import bo_policies
 
-# import custom_ops as ops
-# import data_utils
-# import helper_utils
-# import numpy as np
-# from shake_drop import build_shake_drop_model
-# from shake_shake import build_shake_shake_model
-# import tensorflow as tf
-# from wrn import build_wrn_model
-# import bo_policies
 
 MODEL_NAME = 'wrn'
 CHECKPOINT_DIR = ' '
